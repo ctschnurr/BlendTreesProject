@@ -39,7 +39,10 @@ public class PlayerMovement_2D : MonoBehaviour
             animator.SetFloat("LastMoveY", Input.GetAxis("Vertical"));
         }
 
-
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     void Move()
